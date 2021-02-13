@@ -1,0 +1,19 @@
+include ./../mixins/_btn.pug
+include ./../mixins/_icon.pug
+
+mixin post(title,date,imglink,articale,btnLink,btnText)
+    .post
+        h2.post__title #{title}
+        h4.post__date #{date}
+        .post__img
+            img(src="./../../img/posts-preview/" + imglink, alt="post imeges")
+        p.post__articale #{articale}
+        .post__footer
+            +btn(btnLink,btnText)
+            .icons
+                +icon(jsonData.linkWatsap,jsonData.imgWatsap)
+                +icon(jsonData.linkInsta,jsonData.imgInsta)
+                +icon(jsonData.linkTwit,jsonData.imgTwit)
+                +icon(jsonData.linkFb,jsonData.imgFb)
+        
+

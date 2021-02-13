@@ -1,0 +1,17 @@
+include ./../mixins/_icon.pug
+include ./../mixins/_footerList.pug
+
+footer.footer 
+    .container
+        .footer__wraper
+            +footerList(jsonData.btnLink,jsonData.footerText1,jsonData.footerText2)
+            +footerList(jsonData.btnLink,jsonData.footerText3,jsonData.footerText4)
+            +footerList(jsonData.btnLink,jsonData.footerText5,jsonData.footerText6)
+            .icons
+                +icon(jsonData.linkInsta,jsonData.imgInsta)
+                +icon(jsonData.linkTwit,jsonData.imgTwit)
+                +icon(jsonData.linkFb,jsonData.imgFb)
+    .footer__copy
+        .container
+            p.copy
+                | © Copyright 2019. All rights reserved.

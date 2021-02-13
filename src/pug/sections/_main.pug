@@ -1,0 +1,47 @@
+include ./../mixins/_post.pug
+include ./../mixins/_btnAside.pug
+include ./../mixins/_asidePosts.pug
+include ./../mixins/_asideInsta.pug
+include ./../mixins/_pagination.pug
+
+.main
+    .container
+        .main__page-wraper
+            .posts__wrap
+                +post(jsonData.postTitle1,jsonData.postDate1,jsonData.postImg1,jsonData.postArticale1,jsonData.btnLink,jsonData.btnText)
+                +post(jsonData.postTitle2,jsonData.postDate2,jsonData.postImg2,jsonData.postArticale2,jsonData.btnLink,jsonData.btnText)
+                +post(jsonData.postTitle3,jsonData.postDate3,jsonData.postImg3,jsonData.postArticale3,jsonData.btnLink,jsonData.btnText)
+                +post(jsonData.postTitle4,jsonData.postDate4,jsonData.postImg4,jsonData.postArticale4,jsonData.btnLink,jsonData.btnText)
+                +post(jsonData.postTitle5,jsonData.postDate5,jsonData.postImg5,jsonData.postArticale5,jsonData.btnLink,jsonData.btnText)
+                .pagination
+                    +namberPages(jsonData.btnLink)
+                    a.older-post(href="#!")
+                        | older posts
+            aside.aside
+                .recent-posts
+                    +btnasaide(jsonData.btnLink,jsonData.btnAside1)
+                    +asidePosts(jsonData.postImg1,jsonData.postTitle1,jsonData.postDate1)
+                    +asidePosts(jsonData.postImg2,jsonData.postTitle2,jsonData.postDate2)
+                    +asidePosts(jsonData.postImg3,jsonData.postTitle3,jsonData.postDate3)
+                    +asidePosts(jsonData.postImg4,jsonData.postTitle4,jsonData.postDate4)
+                    +asidePosts(jsonData.postImg5,jsonData.postTitle5,jsonData.postDate5)
+                .recent-posts
+                    +btnasaide(jsonData.btnLink,jsonData.btnAside2)
+                    +asidePosts(jsonData.postImg1,jsonData.postTitle1,jsonData.postDate1)
+                    +asidePosts(jsonData.postImg2,jsonData.postTitle2,jsonData.postDate2)
+                    +asidePosts(jsonData.postImg3,jsonData.postTitle3,jsonData.postDate3)
+                    +asidePosts(jsonData.postImg4,jsonData.postTitle4,jsonData.postDate4)
+                    +asidePosts(jsonData.postImg5,jsonData.postTitle5,jsonData.postDate5)
+                .recent-posts
+                    +btnasaide(jsonData.btnLink,jsonData.btnAside3)
+                    .insta-wraper
+                        +asideIstaImg(jsonData.btnLink,jsonData.imgInsta1)
+                        +asideIstaImg(jsonData.btnLink,jsonData.imgInsta2)
+                        +asideIstaImg(jsonData.btnLink,jsonData.imgInsta3)
+                        +asideIstaImg(jsonData.btnLink,jsonData.imgInsta4)
+                        +asideIstaImg(jsonData.btnLink,jsonData.imgInsta5)
+                        +asideIstaImg(jsonData.btnLink,jsonData.imgInsta6)
+                        +asideIstaImg(jsonData.btnLink,jsonData.imgInsta7)
+                        +asideIstaImg(jsonData.btnLink,jsonData.imgInsta8)
+                        +asideIstaImg(jsonData.btnLink,jsonData.imgInsta9)
+                        +asideIstaImg(jsonData.btnLink,jsonData.imgInsta10)

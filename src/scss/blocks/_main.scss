@@ -1,0 +1,26 @@
+.main__page-wraper{
+    display:flex;
+    justify-content: space-between;
+}
+.pagination{
+    width: 100%;
+    padding-bottom: 80px;
+    display: flex;
+}
+.namberPage__list{
+    margin: 0 auto;
+}
+.older-post,
+.namberPage__link{
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a1a;
+    text-transform: uppercase;
+    &:last-child{
+        margin-right: 0;
+    }
+    &:hover{
+        color: #9b2424;
+    }
+}

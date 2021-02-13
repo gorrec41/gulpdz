@@ -1,0 +1,12 @@
+include ./../mixins/_icon.pug
+include ./../mixins/_search.pug
+
+header.header
+    .header__box
+        .icons
+            +icon(jsonData.linkInsta,jsonData.imgInsta)
+            +icon(jsonData.linkTwit,jsonData.imgTwit)
+            +icon(jsonData.linkFb,jsonData.imgFb)
+        h1.logo #{jsonData.logo}
+        +search(jsonData.searchImg,jsonData.subscribeButton)
+        

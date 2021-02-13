@@ -1,0 +1,52 @@
+.post{
+    margin-bottom: 60px;
+    padding-bottom: 45px;
+    max-width: 870px;
+    width: 100%;
+    border-bottom: 2px solid #dde2e7 ;
+    &:hover img{
+        transition: 1s;
+        transform: scale(1.01);
+    }
+}
+.post__title,
+.post__date{
+    text-align: center;
+}
+.post__articale,
+.post__title{
+    margin-bottom: 35px;
+}
+.post__title{
+    font-family: 'Playfair Display', serif;
+    font-size: 33px;
+    font-weight: 700;
+}
+.post__date{
+    margin-bottom: 45px;
+    font-family: 'Exo 2', sans-serif;
+    text-transform: uppercase;
+    color: #b0b0b0;
+    font-size: 14px;
+    font-weight: 400;
+}
+.post__img{
+    margin-bottom: 45px;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
+.post__articale{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+.post__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding-right: 15px;
+}
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Playfair Display', serif;
